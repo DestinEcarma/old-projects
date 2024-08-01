@@ -1,0 +1,88 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#turn {
+    max-width: 451px;
+    max-height: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin-left: 50px;
+    position: relative;
+    float: left;
+    border-right: 5px;
+    border: 1px solid #00a4a2;
+    border-style: inset;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    transition: .85s linear;
+}
+
+.turnheightlight {
+    background: #5cb85c !important;
+    color: #fff;
+}
+
+#game {
+    max-height: 504px;
+    max-width: 504px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.cellprefix {
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+    max-width: 50px;
+    float: left;
+    margin: 3px;
+    padding: 15px 0 0 20px;
+}
+
+.box {
+    border: 1px solid #00a4a2;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+    max-width: 50px;
+    float: left;
+    margin: 3px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+    font-size: 30pt;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.box:hover {
+    color: #fff;
+    background:rgba(37, 88, 228, 0.5);
+    z-index: 2;
+    transform: translate(2.5px, -2.5px);
+    animation: solution 1.5s ease-in-out infinite alternate;
+}
+
+.black {
+    background: rgba(128, 128, 128, 0.8);
+}
+
+.green {
+    background: rgba(65, 161, 73, 0.5) !important;
+}
