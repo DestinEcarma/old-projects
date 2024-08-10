@@ -41,8 +41,8 @@ class tts:
             if a < 0:
                 self.pause = True
 
-test = tts(False)
-
 if __name__ == '__main__':
+    test = tts(False)
+
     threading.Thread(target=test.pauseCheck).start()
     threading.Thread(target=test.voice).start()
